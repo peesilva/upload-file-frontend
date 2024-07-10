@@ -51,5 +51,5 @@ function displayAlert(type, message) {
         if (alerts.length > 0) {
             alerts[0].remove(); // Remove oalerta mais antigo
         }
-    }, 1500); //(1.5 segundos)
+    }, 2000); //(1.5 segundos)
 }
