@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Example</title>
+    <!-- Bootstrap CSS for alert styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="file" id="fileInput" class="form-control-file">
+            </div>
+            <div class="col-md-6">
+                <button id="uploadButton" class="btn btn-primary">Upload File</button>
+                <button id="sendButton" class="btn btn-success" style="display: none;">Enviar</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="alertContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS for alert functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
