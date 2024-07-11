@@ -19,3 +19,21 @@ body {
 .btn-success{
     margin-top: 6px;
 }
+
+.btn-primary{
+margin-top: -4px;
+}
+
+.cabecalho{
+    max-width: 800px;
+    margin: auto;
+    padding: 1Z0px;
+    border-width: 0cap;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.subititulo{
+    margin: auto;
+    padding: 20px;
+}

@@ -25,12 +25,18 @@ function uploadFile() {
     .then(response => {
         if (response.ok) {
             displayAlert('success', 'File uploaded successfully.');
+        } else if (response.status === 413) {
+            displayAlert('danger', 'O tamanho do arquivo é maior que o permitido.');
         } else {
             throw new Error('Failed to upload file.');
         }
     })
     .catch(error => {
-        displayAlert('danger', error.message);
+        if (error.message === 'Failed to fetch') {
+            displayAlert('danger', 'O tamanho do arquivo é maior que o permitido.');
+        } else {
+            displayAlert('danger', error.message);
+        }
     });
 }
 
@@ -51,5 +57,5 @@ function displayAlert(type, message) {
         if (alerts.length > 0) {
             alerts[0].remove(); // Remove oalerta mais antigo
         }
-    }, 2000); //(2 segundos)
+    }, 5000); //(5 segundos)
 }
